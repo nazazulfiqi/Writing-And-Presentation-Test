@@ -1,4 +1,4 @@
-# _Writing and Presentation Test Week 1_
+# **_Writing and Presentation Test Week 1_**
 
 ## Hari ke - 1 : Unix Command Line
 
@@ -21,6 +21,12 @@ Jenis shell yang berbasis teks
 
 Tempat dimana user bisa mengetikkan perintah dalam bentuk teks dan memberikan instruksi pada komputer untuk mengerjakan tugas tertentu.
 
+### Cara Mengakses CLI Menggunakan Terminal
+
+Sebenarnya kita bisa mengakses CLI kita bisa menggunakan **SH**, **ZSH**, **CMD**. Tapi agar lebih mudah disini saya menggunakan **_Git Bash_**.
+
 ### File System
 
-Mengatur bagaimana data disimpan didalam sebuah system
+Mengatur bagaimana data disimpan didalam sebuah system. OS Windows & Unix-like biasanya menyusun file dan direktori menggunakan struktur yang bentuknya mirip dengan pohon / tree.
+
+**Contoh :**
