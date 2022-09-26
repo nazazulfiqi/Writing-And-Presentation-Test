@@ -117,7 +117,7 @@ git config --list
 git init namafolder
 ```
 
-- Git Status
+#### Git Status
 
 ```
 git status
@@ -128,3 +128,95 @@ git status
 - Modified Modified merupakan kondisi dimana revisi atau perubahan sudah dilakukan, tetapi belum ditandai (untracked) dan belum disimpan dalam version control.
 - Staged Staged merupakan kondisi dimana revisi sudah ditandai (modified) namun belum disimpan di version control.
 - Committed Commit/Committed merupakan kondisi dimana revisi sudah disimpan pada version control.
+
+#### Git Add
+
+Setelah cek status dengan ‘git status’, selanjutnya kita ubah status ‘untrackted file’ dan ‘unmodified’ menjadi modified dengan cara :
+
+```
+git add namafile
+```
+
+**Atau**
+
+```
+git add .
+```
+
+#### Git Commit
+
+Digunakan untuk save perubahan pada version control yang telah dimasukkan kedalam staging area.
+
+```
+git commit -m "pesan"
+```
+
+#### Git Log
+
+Digunakan untuk melihat riwayat/catatan commit yang telah dilakukan.
+
+```
+git log --oneline
+```
+
+### Git Branch
+
+Digunakan untuk membuat percabangan,biasanya jika ada fitur baru tetapi belum pasti agar tidak mengganggu branch main
+
+```
+git branch namaBranch
+```
+
+### Git Checkout
+
+Digunakan untuk kembali ke commit yang dimau atau berpindah branch
+
+- Untuk Kembali Ke Commit
+
+```
+git checkout hashCommit
+```
+
+- Untuk Berpindah Branch
+
+```
+git branch namaBranch
+```
+
+### Mempublish Aplikasi Ke Github
+
+Setelah membuat Repository didalam Git kita bisa mempublish repository tersebut kedalam Github.
+
+1. Klik icon "+" di Github lalu pilih New Repository
+
+   ![](image/repogithub.png)
+
+2. Isi nama project sesuai nama repo yang dibuat di Git sebelumnya
+
+   ![](image/isinamaproject.png)
+
+3. Jika sudah klik create repository
+
+   ![](image/createrepo.png)
+
+4. Kembali ke Git Bash (Repository Git yang ingin dipublish), Lalu ketik
+
+```
+git remote add origin https://github.com/nazazulfiqi/project1.git
+git branch -M main
+git push -u origin main
+```
+
+### Melakukan Cloning dari Github ke Local
+
+1. Cari Repo Github yang Ingin Dicloning,Lalu Copy link https
+
+![](image/cloningrepo.png)
+
+2. Buka Github Lalu Ketikkan
+
+```
+git clone https://github.com/nazazulfiqi/portofolio.git
+```
+
+3. File Sudah Ada di Local
