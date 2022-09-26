@@ -72,6 +72,59 @@ Mengatur bagaimana data disimpan didalam sebuah system. OS Windows & Unix-like b
 
 ### Git & Github
 
-- **Git** adalah aplikasi yang dapat melacak setiap perubahan yang terjadi pada suatu folder atau file. Git biasanya digunakan oleh para programmer sebagai tempat penyimpanan file pemrograman mereka, karena lebih efektif.
+- **Git** adalah aplikasi yang dapat melacak setiap perubahan yang terjadi pada suatu folder atau file. Git biasanya digunakan oleh para programmer sebagai tempat penyimpanan file pemrograman mereka, karena lebih efektif.Didalam Git ada 3 stage yaitu Working Directory -> Staging -> Commit.
 
 - **Github** adalah situs web juga sebuah layanan cloud yang bisa membantu para pengguna untuk menyimpan,mengelola dan mengembangkan.
+
+### Kenapa Git & Github Wajib digunakan?
+
+Karena **Git & Github** dapat digunakan untuk berkolaborasi untuk mengerjakan project tanpa perlu mengirim file secara offline / Copy Paste dan Juga dapat memulai kolaborasi tanpa menunggu satu sama lain.
+
+### Instalasi GIT
+
+- [Download](https://git-scm.com/downloads) Git dan jalankan hasil download GIT kamu seperti instal aplikasi pada umumnya
+
+### Cek Apakah Instalasi Berhasil
+
+```
+git --version
+```
+
+### Setup Awal GIT
+
+- Konfigurasi Git
+
+```
+git config --global user.name "Naza Zulfiqi"
+git config --global user.email zulfiqinaza@gmail.com
+```
+
+\***_Harus menggunakan Username dan Email yang sama dengan Github_**
+
+### Cek Apakah Setup Awal Berhasil
+
+```
+git config --list
+```
+
+### Repository GIT
+
+- Repository adalah direktori proyek yang kita buat. 1 Repo = 1 Proyek = 1 Direktori
+
+- Membuat Repository
+
+```
+git init namafolder
+```
+
+- Git Status
+
+```
+git status
+```
+
+![gitstatus](image/gitstatus.png)
+
+- Modified Modified merupakan kondisi dimana revisi atau perubahan sudah dilakukan, tetapi belum ditandai (untracked) dan belum disimpan dalam version control.
+- Staged Staged merupakan kondisi dimana revisi sudah ditandai (modified) namun belum disimpan di version control.
+- Committed Commit/Committed merupakan kondisi dimana revisi sudah disimpan pada version control.
