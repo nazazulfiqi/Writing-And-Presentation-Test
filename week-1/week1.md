@@ -61,7 +61,7 @@ Mengatur bagaimana data disimpan didalam sebuah system. OS Windows & Unix-like b
 - `rm` Command untuk menghapus file atau directory.
 - `rm -R` atau `rm -d` Command untuk menghapus directory.
 
-## Hari ke - 2 : Git & Github Dasar
+## Hari ke - 1 : Git & Github Dasar
 
 ### Pengenalan Git
 
@@ -220,3 +220,61 @@ git clone https://github.com/nazazulfiqi/portofolio.git
 ```
 
 3. File Sudah Ada di Local
+
+## Hari ke - 2 : HTML
+
+HTML (HyperText Markup Language) bukanlah suatu bahasa pemrograman tetapi Markup Language yang menggunakan tanda-tanda tertentu (tag) untuk menyatakan kode-kode yang harus ditafsirkan oleh browser agar halaman tersebut dapat ditampilkan secara benar. HTML juga bisa dibilang suatu kerangka untuk membuat website.
+
+### Tools Pendukung HTML
+
+- Browser
+
+  Contoh : Mozilla Firefox, Microsof Egde, Google Chrome
+
+  _Disarankan Google Chrome_
+
+- Code Editor
+
+  Contoh : VSCode, Notepad, Sublime Text
+
+  _Disarankan VSCode_
+
+### Struktur HTML Sederhana
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
+
+- HTML tersusun sebagai kesatuan dari sebuah tingkatan (family tree relationship).
+- Saat sebuah element berada di dalam element lain, maka disebut child element.
+- Element yang berada diatas element lain disebut parent element.
+
+### Cara Menjalankan file HTML
+
+- Dengan Default Browser,Klik Kanan Pada File Html lalu **Open In Default Browser**
+
+![](image/defaultbrow.png)
+
+- Dengan Live Server
+  Live Server merupakan extension pada VSCode yang dapat merefresh browser secara otomatis.
+
+1. Pilih Icon Extension , Lalu Cari Live Server
+
+   ![](image/liveserver.png)
+
+2. Klik Install
+
+   ![](image/liveinstall.png)
+
+3. Jika Sudah, Buka File Html -> Klik Kanan -> Open With Live Server
+
+   ![](image/openwith.png)
