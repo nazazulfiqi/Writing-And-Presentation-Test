@@ -770,3 +770,313 @@ if (nilai >= 80 && nilai <= 100) {
 ```
 
 ## Hari ke - 5 : Javascript
+
+JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Kalau sebelumnya kita hanya mengenal HTML dan CSS, nah sekarang kita jadi tahu bahwa JavaScript dapat meningkatkan fungsionalitas pada halaman web. Bahkan dengan JavaScript ini kita bisa membuat aplikasi, tools, atau bahkan game pada web.
+
+### Keunggulan Javascript
+
+1. General Purpose
+
+   Saat ini JavaScript tidak hanya digunakan di sisi client (browser) saja. Semenjak adanya Node.js JavaScript dapat digunakan di luar dari browser.
+
+2. Mudah untuk Dipelajari
+
+   Setiap bahasa pemrograman memiliki tingkat kesulitan yang berbeda. Tingkat kesulitan bisa dilihat dari beberapa faktor. Menurut saya sih, syntax atau penulisan jadi salah satu faktor yang paling penting buat dipelajari.
+
+3. Sangat Powerfull
+
+   Kita dapat membuat web dengan hanya menggunakan javascript yang tentunya didukung oleh framework dan librarynya.
+
+### Menjalan Javascript
+
+- Internal Javascript
+
+  Memasukkan Tag `<script>` didalam file HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script></script>
+  </body>
+</html>
+```
+
+- Eksternal Javascript
+
+  Membuat File diluar HTML dengan format `.js` lalu dihubungkan kedalam file HTML.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>
+```
+
+### Tipe Data Javascript
+
+Tipe Data didalam Javascript dibagi 2 yaitu : Primitif dan Non Primitif.
+
+**Contoh Tipe Data Primitif :**
+
+`number` : Berisi Angka / Nomor.
+
+`string` : Berisi Teks / Kalimat.
+
+`boolean` : Berisi True / False.
+
+`undefined` : Jika suatu variabel belum diinisialisasi / belum diberi nilai.
+
+`null` : Jika nilai pada suatu variabel kosong.
+
+**Contoh Tipe Data Non Primitif :**
+
+`array` : Tipe data yang digunakan untuk menyimpan banyak nilai pada satu variabel. \_Contoh :
+
+```js
+let hewan = ["kucing", "burung", "kelinci"];
+```
+
+`object` : Sesuatu yang terdiri atas beberapa property . property adalah diidentifikasikan sebagai sebuah key yang memiliki nilai. Contoh :
+
+```js
+let orang = {
+  nama: "naza",
+  umur: 20,
+  pekerjaan: "mahasiswa",
+};
+```
+
+### Operator Javascript
+
+**1. Operator Aritmatika**
+
+- `+` untuk penambahan
+
+  ```js
+  let x = 1 + 3 console.log(x) // ouput 4
+  ```
+
+- `-` untuk pengurangan
+
+  ```js
+  let x = 4 - 3 console.log(x) // ouput 1
+  ```
+
+- `*` untuk pengalian
+
+  ```js
+  let x = 3 * 1 console.log(x) // ouput 3
+  ```
+
+- `/` untuk pembagian
+
+  ```js
+  let x = 6 / 2 console.log(x) // ouput 3
+  ```
+
+- `%` untuk mencari hasil bagi / modulus
+
+  ```js
+  let x = 10 % 2 console.log(x) // ouput 0
+  ```
+
+- `**` untuk pangkat
+
+  ```js
+  let x = 3 ** 2 console.log(x) // ouput 9
+  ```
+
+- `++` untuk menambahkan 1 / increment
+
+  ```js
+  let x =  3 console.log(x++) // ouput 4
+  ```
+
+- `--` untuk mengurangi 1 / decrement
+
+  ```js
+  let x =  3 console.log(x--) // ouput 2
+  ```
+
+**2. Operator Perbandingan**
+
+- `==` : Jika sama dengan (value)
+
+- `===` : Jika sama dengan (value dan tipe data)
+
+- `!=` : Jika tidak sama dengan (value)
+
+- `!==` : Jika tidak sama dengan (value dan tipe data)
+
+- `>` : Jika lebih dari
+
+- `<` : Jika kurang dari
+
+- `>=` : Jika lebih dari sama dengan
+
+- `<=` : jika kurang dari sama dengan
+
+- `? :` : ternary operator
+
+**3. Operator Logika**
+
+- `&&` : AND
+- `||` : OR
+- `!` : NOT
+
+**4. Operator Assignment**
+
+- `=` : x = y
+
+- `+=` : x += y // x = x + y
+
+- `-=` : x -= y // x = x - y
+
+- `*=` : x _= y // x = x _ y
+
+- `/=` : x /= y // x = x / y
+
+- `%=` : x %= y // x = x % y
+
+- `**=`: x **= y // x = x ** y
+
+### Control Flow Looping & Conditional
+
+#### Looping
+
+kondisi dalam bahasa pemrograman yang digunakan untuk menjalankan kode atau baris perintah secara berulang sebanyak jumlah yang ditentukan.
+
+- For Loop
+
+Akan berulang apabila kondisinya true.
+
+```js
+for (let i = 1; i <= 5; i++) {
+  // (start , stop , step)
+  console.log(i);
+}
+//output 12345
+```
+
+- While
+
+Akan berulang apabila kondisinya true.
+
+```js
+let i = 0;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+//output 12345
+```
+
+- Do While
+
+Akan berulang 1 meskipun kondisinya false.
+
+```js
+let i = 5;
+do {
+  console.log("hallo");
+  i++;
+} while (i < 5);
+//output hallo
+```
+
+- For In
+
+Perulangan pada sebuah object.
+
+```js
+let isi = { nama: "naza", umur: 20 };
+for (let i in isi) {
+  console.log(isi[i]);
+}
+//output naza
+//output 20
+```
+
+- For of
+
+Perulangan pada sebuah Array.
+
+```js
+let isi = ["naza", 20];
+for (let i of isi) {
+  console.log(i);
+}
+//output naza
+//output 20
+```
+
+#### Conditional
+
+Conditional merupakan statement percabangan yang menggambarkan suatu kondisi.Conditional statement akan mengecek kondisi spesifik dan menjalankan perintah berdasarkan kondisi tersebut,yang dicek adalah apakah kondisi tersebut TRUE (benar).Jika TRUE maka code didalam kondisi tersebut dijalankan.
+
+- if
+
+Dapat digunakan jika kita hanya mempunyai satu kondisi.
+
+```js
+let lampu = "merah";
+if (lampu == "merah") {
+  console.log("berhenti");
+} //output berhenti
+```
+
+- else if else
+
+Dapat digunakan jika kita mempunyai berbagai kondisi.
+
+```js
+let lampu = "ungu";
+if (lampu == "merah") {
+  console.log("berhenti");
+} else if (lampu == "kuning") {
+  console.log("hati-hari");
+} else if (lampu == "hijau") {
+  console.log("jalan");
+} else {
+  console.log("forbiden");
+} //output forbiden
+```
+
+- switch
+
+Gunakan switch case jika kondisi dan percabangan terlalu banyak.
+
+```js
+let lampu = "hijau";
+switch (lampu) {
+  case "merah":
+    console.log("berhenti");
+    break;
+  case "kuning":
+    console.log("hati-hati");
+    break;
+  case "hijau":
+    console.log("jalan");
+    break;
+  default:
+    console.log("forbiden");
+    break;
+} //output jalan
+```
