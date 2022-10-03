@@ -407,4 +407,174 @@ console.log(Math.floor(angka2)); // Output: 2
 math.pow(4, 2); //output: 16
 ```
 
-## Hari ke - 3 : DOM Manipulation
+## Hari ke - 3 : Intro Javascript DOM
+
+DOM merupakan kependekan dari Document Object Model, DOM ini yakni object model standar bagi XML dan HTML yang memiliki sifat platform independent. Saat membuka sebuah halaman web pada browser, maka file HTML dari web akan dimuat serta ditampilkan pada layar perangkat.
+
+#### Element
+
+```html
+<body>
+  <div id="text"
+    <p></p>
+  </div>
+</body>
+```
+
+#### Node
+
+Bagian-bagian terkecil yang berada di HTML. Seperti text.
+
+### Traversing
+
+`getElementsByTagName()` Merupakan metode yang dapat digunakan untuk menampilkan koleksi semua elemen dengan nama tag yang ditentukan.
+
+```js
+let byTag = document.getElementsByTagName("p");
+console.log(byTag);
+```
+
+`getElementByID()` Merupakan metode untuk menampilkan elemen dengan nilai yang ditentukan. getElementByID akan menampilkan nilai null jika elemen itu tidak ada. getElementByID merupakan metode yang sering digunakan.
+
+```js
+let byId = document.getElementById("hero");
+console.log(byId);
+```
+
+`getElementsByClassName()` Merupakan metode yang digunakan untuk menampilkan kumpulan elemen dengan nama class. getElementsByClassName akan menampilkan HTML Collection.
+
+```js
+let byClass = document.getElementByClassName("nav-link");
+console.log(byClass);
+```
+
+`querySelector()` Mengambil elemen html setiap elemen html dengan selector tag , class , id dll,
+
+```js
+let heroSection = document.querySelector("#hero");
+console.log(heroSection);
+```
+
+`parentElement()` Mengambil parent element berdasarkan childnya
+
+```js
+let selectItem = document.querySelector(".item");
+console.log(selectItem.parentElement);
+```
+
+dan masih banyak lagi cara untuk traversing.
+
+## Hari ke - 4 : Javascript DOM Manipulation
+
+### Syntax Manipulasi Element
+
+- `createElement()` : Fungsinya untuk membuat elemen baru.
+
+```js
+const paragrafSatu = document.createElement("p");
+heading.textContent = "Halo Semua!";
+document.getElementById("main").appendChild(p);
+```
+
+- `innerHTML` : Fungsinya untuk mendapatkan dan mengatur konten HTML dari suatu elemen.
+
+```js
+document.querySelector("#list").innerHTML = "<li>Ikan</li>";
+```
+
+- `innerText` : Fungsinya untuk mendapatkan dan mengatur konten HTML dari suatu elemen.
+
+```js
+document.getElementById("nama-saya").innerText = "Hai Namaku Naza";
+```
+
+- `textContent` : Fungsinya untuk mendapatkan dan atur konten teks dari sebuah node.
+
+```js
+document.getElementById("heading").textContent = "Skilvul";
+```
+
+- `append()` : Fungsinya untuk menyisipkan node setelah node child terakhir dari node parent.
+
+```js
+//deklarasi getElement
+me.append("is Append");
+```
+
+- `appendChild()` : Fungsinya untuk menambahkan node ke daftar node child dari node parent yang ditentukan.
+
+```js
+const atas = document.createElement("h1");
+atas.textContent = "HALO SEMUA~";
+document.getElementById("website").appendChild(atas);
+```
+
+- `remove` : Fungsinya untuk menghapus sebuah elemen.
+
+```js
+let atas = document.getElementById("website");
+atas.remove();
+```
+
+`setAttribute` : Fungsinya untuk menambahkan attribute.
+
+```js
+link.setAttribute("class", "website");
+```
+
+`style.Properti` : Fungsinya untuk memberikan style pada html.
+
+```js
+atas.style.color = "blue";
+atas.style.border = "2px solid red";
+```
+
+`style.remove.property` : Fungsinya untuk menghapus properti style.
+
+```js
+atas.style.removeProperty("color");
+```
+
+dan masih banyak cara unutk memanipulasi element pada DOM.
+
+## Hari ke - 5 : Javascript DOM Events & Forms
+
+> Event adalah kejadian yang terjadi di halaman web. Kejadian yang dimaksud di sini seperti aktivitas yang dikerjakan pada halaman web.
+
+### Cara Menambahkan Item Pada HTML
+
+#### Didalam HTML Tag
+
+```html
+<body>
+  <button id="btn" onclick="alert('Selamat Datang')">Klik</button>
+</body>
+```
+
+#### AddEventListener() Pada file .js
+
+```js
+let button = document.getElementById("btn")
+button.addEventListener("click", function() {
+    alert("Nama Saya Naza")
+``
+```
+
+#### Event Property pada file .js
+
+```js
+let button = document.getElementById("btn");
+
+paragraf.onclick = function () {
+  alert("Nama Saya Naza");
+};
+```
+
+### Jenis-jenis Event
+
+- Click
+- Focus
+- Submit
+- Hover
+- Scroll
+- Change
